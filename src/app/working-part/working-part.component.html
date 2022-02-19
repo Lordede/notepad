@@ -1,0 +1,15 @@
+<div id="head">
+  <p>Notizbuch von Lukas Edmüller</p>
+</div>
+
+<div class="button" (click)="changePage()">
+  <i class="fa fa-plus" routerLink="/note-big-component" routerLinkActive="active"></i>
+</div>
+
+<div *ngIf="!isViewNoteBig()">
+  <ul class="ul-no-bullets">
+    <li *ngFor="let note of notes">
+      <app-note-small [title]="note[0]" [content]="note[1]" *ngIf="note[0] != undefined && note[1] != undefined "></app-note-small>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,16 @@
+.smallNote{
+    border-style: groove;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}
+
+.title{
+    border-bottom: 2px dashed black;
+    background-color: aqua;
+}
+
+.content{
+    background-color: beige;
+}

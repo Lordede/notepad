@@ -1,0 +1,9 @@
+<button (click)="changePage()" routerLink="/.." routerLinkActive="active">Zurück</button>
+
+<div id="bigNote">
+  <div class="flex-container">
+    <textarea id="title" class="titleDivContent" #title></textarea>
+    <button id="addButton" class="titleDivContent" (click)="safeNote(title.value, content.value)" ><i class="fa fa-check"></i></button>
+  </div>
+  <textarea id="content" #content></textarea>
+</div>

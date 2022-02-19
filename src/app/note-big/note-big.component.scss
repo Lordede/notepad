@@ -1,0 +1,23 @@
+#bigNote{
+    border-style: groove;
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#title{
+    height: 15px;
+    resize: none;
+    width: 100%;
+}
+
+#content{
+    resize: none;
+    width: 435px;
+    
+}
+
